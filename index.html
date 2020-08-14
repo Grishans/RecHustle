@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rec hustle</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Russo+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bbb3ca3892.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script defer src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+var url=document.location.href;
+$.each($("#preface-top a"),function(){
+if(this.href==url){$(this).addClass('activeCSS');};
+});
+})(jQuery);
+  </script>
+</head>
+<body>
+ 
+  <div class="main">
+   <video width="100%" height="auto" preload="auto" autoplay="true"
+    loop="true" muted="muted">
+        <source src="video/main_video.mp4" type="video/mp4"></source>
+        <source src="video/main_video.webm" type="video/webm"></source>
+    </video>
+   
+    <div class="navbar navbar_main">
+     
+        <img src="img/logo.png" alt="" class="mobil_logo">
+        <input type="checkbox" id="Tmenu" name="toggle"  class="toggle_menu_ad">
+        <label for="Tmenu" class="toggle_menu_ad">
+          <i class="fa fa-bars fa-2x mobil_menu_open" aria-hidden="true"></i>
+          <i class="fas fa-times fa-2x mobil_menu_close" aria-hidden="true"></i>
+        </label>
+      <ul id="preface-top">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="advantages.html">преимущества</a></li>
+        <li><a href="team.html">команда</a></li>
+        <li><a href="sevice.html">услуги</a></li>
+        <li><a href="portfolio.html">портфолио</a></li>
+        <li><a href="reports.html">отзывы</a></li>
+        <li><a href="contacts.html">контакты</a></li>
+        <li class="lang_icon">
+        <i class="fas fa-globe fa-lg lang_icon">
+        <ul class="lang">
+          <li><a href="">Ru</a></li>
+          <li><a href="">Eng</a></li>
+          <li><a href="">Uzb</a></li>
+        </ul>
+        </i>
+        </li>
+        <li class="mobil_lang">
+          <a href="">Ru</a>
+          <a href="">Eng</a>
+          <a href="">Uzb</a>
+        </li>
+        <li class="toogle_sn">
+          <a href=""><i class="fab fa-facebook-f fa-2x mobil_sn_icon"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x mobil_sn_icon"></i></a>
+          <a href=""><i class="fab fa-telegram-plane fa-2x mobil_sn_icon"></i></a>
+        </li>
+      </ul>
+    </div>
+    
+    <a href="#openModal" id="main_btn">Оформить заказ</a>
+    
+<!--    <button id="main_btn">Оформить заказ</button>-->
+    <hr>
+    
+  </div>
+  
+  <div class="footer">
+   
+    <div class="soc_net">
+      <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""><i class="fab fa-telegram-plane fa-2x"></i></a>
+    </div>
+    
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    
+    <div class="contacts">
+      <div class="phone">
+        <p><i class="fas fa-phone-alt"></i> +7 (997) 555 55 55</p>
+      </div>
+      <div class="mail">
+        <p><i class="far fa-envelope"></i> rec-huntle@gmail.com</p>
+      </div>
+      <div class="adress">
+        <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д. 1</p>
+      </div>
+    </div>
+    
+    <div class="soc_net_footer_mobil">
+      <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""><i class="fab fa-telegram-plane fa-2x"></i></a>
+    </div>
+    
+  </div>
+  
+  <div id="openModal" class="modal">
+  <div class="modal-dialog main_modal">
+    <div class="modal-content">
+      <div class="modal-body">  
+       <a href="#close" title="Close" class="close"><i class="fas fa-times"></i></a>
+         
+         <div class="modal_content_wrap main_modal_wrap">
+          
+           <div class="form_block">
+        
+        <form action="" class="main_form">
+        
+        <h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+        
+        <input type="text" placeholder="ФИО" required>
+        <div class="form_t_e">
+          <input type="number" placeholder="Телефон" required>
+          <input type="email" placeholder="E-mail" required>
+        </div>
+        <input type="text" placeholder="Тема" required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение..." required></textarea>
+        
+        <input id="input_file" type="file" placeholder="Прикрепить файл">
+        <label class="label_file" for="input_file">
+          <span>Прикрепить файл</span>
+        </label>
+        
+        <p>Place for capcha</p>
+        
+        <input id="form_btn" type="submit" value="Отправить">
+        
+      </form>
+        
+      </div>
+        
+         </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

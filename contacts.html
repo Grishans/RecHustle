@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bbb3ca3892.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script defer src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+var url=document.location.href;
+$.each($("#preface-top a"),function(){
+if(this.href==url){$(this).addClass('activeCSS');};
+});
+})(jQuery);
+  </script>
+</head>
+<body>
+ 
+  <div class="navbar navbar_another">
+      <img src="img/logo.png" alt="" class="mobil_logo">
+        <input type="checkbox" id="Tmenu" name="toggle"  class="toggle_menu_ad">
+        <label for="Tmenu" class="toggle_menu_ad">
+          <i class="fa fa-bars fa-2x mobil_menu_open" aria-hidden="true"></i>
+          <i class="fas fa-times fa-2x mobil_menu_close" aria-hidden="true"></i>
+        </label>
+      <ul id="preface-top">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="advantages.html">преимущества</a></li>
+        <li><a href="team.html">команда</a></li>
+        <li><a href="sevice.html">услуги</a></li>
+        <li><a href="portfolio.html">портфолио</a></li>
+        <li><a href="reports.html">отзывы</a></li>
+        <li><a href="contacts.html">контакты</a></li>
+        <li class="lang_icon">
+        <i class="fas fa-globe fa-lg lang_icon">
+        <ul class="lang">
+          <li><a href="">Ru</a></li>
+          <li><a href="">Eng</a></li>
+          <li><a href="">Uzb</a></li>
+        </ul>
+        </i>
+        </li>
+        <li class="mobil_lang">
+          <a href="">Ru</a>
+          <a href="">Eng</a>
+          <a href="">Uzb</a>
+        </li>
+        <li class="toogle_sn">
+          <a href=""><i class="fab fa-facebook-f fa-2x mobil_sn_icon"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x mobil_sn_icon"></i></a>
+          <a href=""><i class="fab fa-telegram-plane fa-2x mobil_sn_icon"></i></a>
+        </li>
+      </ul>
+    </div>
+    
+  <div class="contact">
+    <div class="contact_wrap">
+     <h1>Контакты</h1>
+     
+     <div class="cont_wrap">
+      
+       <div class="cont">
+        <div class="cont_block">
+          <p>Звоните</p>
+          <p><i class="fas fa-phone-alt"></i> +7 (997) 555 55 55</p>
+          <p><i class="fas fa-phone-alt"></i> +7 (997) 343 11 35</p>
+          <p><i class="fas fa-phone-alt"></i> +7 (997) 343 11 35</p>
+        </div>
+        <div class="cont_block">
+          <p>Пишите</p>
+          <p><i class="far fa-envelope"></i> rec-huntle@gmail.com</p>
+          <p><i class="far fa-envelope"></i> rec-huntle@gmail.com</p>
+        </div>
+        <div class="cont_block">
+          <p>Адреса:</p>
+          <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д. 1</p>
+          <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Никитская, д. 1</p>
+        </div>   
+      </div>
+      
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a8985eb7e580d2ffce3744d00465888fecef3b871a5ef5f7322a9cfb4dcdbbd&amp;width=100%&amp;height=100%&amp;lang=ru_UA&amp;scroll=true"></script>
+      </div>
+      
+     </div>
+        
+      <div class="contacts_sn">
+        <div class="sn_block">
+          <a href=""><img src="img/youtube.svg" alt=""></a>
+          <a href=""><img src="img/whatsapp.svg" alt=""></a>
+          <a href=""><img src="img/vk.svg" alt=""></a>
+          <a href=""><img src="img/facebook.svg" alt=""></a>
+          <a href=""><img src="img/instagram.svg" alt=""></a>
+          <a href=""><img src="img/telegram.svg" alt=""></a>
+          
+        </div>
+        <hr class="cont_hr">
+      </div>
+      
+      <div class="form_block">
+        
+        <form action="" class="cont_form">
+        
+        <h1>ОСТАВЬТЕ ЗАЯВКУ И МЫ ВАМ ПЕРЕЗВОНИМ</h1>
+        
+        <input type="text" placeholder="ФИО" required>
+        <div class="form_t_e">
+          <input type="number" placeholder="Телефон" required>
+          <input type="email" placeholder="E-mail" required>
+        </div>
+        <input type="text" placeholder="Тема" required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение..." required></textarea>
+        
+        <input id="form_btn" type="submit" value="Отправить">
+        
+      </form>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+  <div class="footer team_footer">
+   
+    <div class="soc_net">
+      <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""><i class="fab fa-telegram-plane fa-2x"></i></a>
+    </div>
+    
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    
+    <div class="contacts">
+      <div class="phone">
+        <p><i class="fas fa-phone-alt"></i> +7 (997) 555 55 55</p>
+      </div>
+      <div class="mail">
+        <p><i class="far fa-envelope"></i> rec-huntle@gmail.com</p>
+      </div>
+      <div class="adress">
+        <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, д. 1</p>
+      </div>
+    </div>
+    
+     <div class="soc_net_footer_mobil">
+      <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""><i class="fab fa-telegram-plane fa-2x"></i></a>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+</body>
+</html>
